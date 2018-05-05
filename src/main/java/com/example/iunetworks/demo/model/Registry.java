@@ -41,17 +41,17 @@ public class Registry {
     @Column(name = "id")
     private Integer id;
 
+    @Column(name = "car_num")
+    private String carNumber;
+
+    @Column(name = "cert_num")
+    private String certificateNumber;
+
     @Column(name = "persion_name")
     private String personName;
 
     @Column(name = "address")
     private String address;
-
-    @Column(name = "cert_num")
-    private String certificateNumber;
-
-    @Column(name = "car_num")
-    private String carNumber;
 
     @Column(name = "car_model")
     private String carModel;

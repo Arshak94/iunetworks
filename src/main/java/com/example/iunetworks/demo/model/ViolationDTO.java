@@ -17,12 +17,6 @@ public class ViolationDTO {
     private Integer id;
 
     @JsonProperty
-    private String personName;
-
-    @JsonProperty
-    private String address;
-
-    @JsonProperty
     private String certificateNumber;
 
     @JsonProperty
@@ -30,6 +24,12 @@ public class ViolationDTO {
 
     @JsonProperty
     private String carModel;
+
+    @JsonProperty
+    private String address;
+
+    @JsonProperty
+    private String personName;
 
     @JsonProperty
     private Date violationDate;
@@ -43,14 +43,13 @@ public class ViolationDTO {
     @JsonProperty
     private Integer violationId;
 
-    public ViolationDTO(Integer id, String personName, String address, String certificateNumber, String carNumber,
-                        String carModel, Date violationDate, double violationPrice, String violationToken, Integer violationId) {
+    public ViolationDTO(Integer id, String certificateNumber, String carNumber, String carModel, String address, String personName, Date violationDate, double violationPrice, String violationToken, Integer violationId) {
         this.id = id;
-        this.personName = personName;
-        this.address = address;
         this.certificateNumber = certificateNumber;
         this.carNumber = carNumber;
         this.carModel = carModel;
+        this.address = address;
+        this.personName = personName;
         this.violationDate = violationDate;
         this.violationPrice = violationPrice;
         this.violationToken = violationToken;
